@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Layout HTML CSS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      /* HEADER */
+      header {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      /* NAVBAR */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 15px 30px;
+      }
+
+      .logo {
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      .menu a {
+        color: white;
+        text-decoration: none;
+        margin-left: 25px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .menu a:hover {
+        color: yellow;
+      }
+
+      /* SECTION GRID */
+      section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+
+      /* ARTICLE */
+      article {
+        background-color: #fff;
+        padding: 20px;
+        border: 2px solid #ccc;
+        background-image: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+      }
+
+      /* ASIDE */
+      aside {
+        background-color: #fff;
+        padding: 20px;
+        border: 2px solid #ccc;
+        background-image: linear-gradient(135deg, #e3f2fd, #bbdefb);
+      }
+
+      /* FOOTER */
+      footer {
+        background-color: #444;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 768px) {
+        section {
+          grid-template-columns: 1fr;
+        }
+        nav {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .menu {
+          margin-top: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>HEADER</header>
+
+    <nav>
+      <div class="logo">LOGO</div>
+      <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+    </nav>
+
+    <section>
+      <article>
+        <h2>Article</h2>
+        <p>
+          Ini adalah bagian artikel utama. Kamu dapat menambahkan konten seperti
+          teks, gambar, tabel, atau paragraf panjang di sini. Layout ini
+          menggunakan kombinasi Flexbox untuk navigasi dan Grid untuk konten
+          utama.
+        </p>
+      </article>
+
+      <aside>
+        <h2>Aside</h2>
+        <p>
+          Ini adalah bagian samping yang dapat berisi informasi tambahan, link
+          penting, atau iklan kecil. Kamu dapat menambahkan apa pun yang relevan
+          di sini.
+        </p>
+      </aside>
+    </section>
+
+    <footer>© 2025 Website Latihan — Dibuat oleh Reyhan Ahmad Fauzan</footer>
+  </body>
+</html>
